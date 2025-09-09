@@ -16,7 +16,7 @@ The project successfully builds and evaluates a linear regression model to predi
 To run this project, you will need to have Python and the necessary libraries installed.
 
 1.  **Clone the Repository:**
-    `git clone <>`
+    `git clone <https://github.com/abdullahhashmi01/Housing-Price-Prediction-Model/tree/main>`
 
 2.  **Install Dependencies:**
     Make sure you have the following libraries installed. You can install them using pip:
