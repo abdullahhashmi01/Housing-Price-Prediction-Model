@@ -1,29 +1,53 @@
 # Housing-Price-Prediction-Model
-Predict housing prices using a machine learning model. The model is built using a dataset that includes various features of houses such as area, number of bedrooms and bathrooms, number of stories, and other amenities. The primary goal is to develop a predictive model that can accurately estimate a house's price based on its characteristics.
 
-#### **Housing Price Prediction Model**
+I created a machine learning model to predict the price of houses using a housing dataset.
 
-This repository contains a machine learning project that predicts housing prices based on a set of features. The model is built using a Linear Regression algorithm in Python, leveraging popular libraries like Pandas, NumPy, and Scikit-learn.
+Tools, methods, and frameworks used :
+I used the following tools, methods, and frameworks to solve the problem:
 
-**Files in this Repository:**
-* `Housing Model.ipynb`: A Jupyter Notebook containing all the code for data loading, preprocessing, model training, and evaluation.
-* `Housing.csv`: The dataset used to train the model. It includes various features of houses.
+Libraries:
 
-**Conclusion:**
-The project successfully builds and evaluates a linear regression model to predict housing prices. The analysis includes a calculation of the Mean Squared Error (MSE) and the R-squared score to assess the model's performance. The final output includes a scatter plot showing the actual versus predicted house prices, providing a visual representation of the model's accuracy.
 
-#### **How to Run the Code**
-To run this project, you will need to have Python and the necessary libraries installed.
+pandas for data manipulation 
 
-1.  **Clone the Repository:**
-    `git clone <https://github.com/abdullahhashmi01/Housing-Price-Prediction-Model/tree/main>`
 
-2.  **Install Dependencies:**
-    Make sure you have the following libraries installed. You can install them using pip:
-    * `pandas`
-    * `numpy`
-    * `scikit-learn`
-    * `matplotlib`
+numpy for numerical operations 
 
-3.  **Run the Jupyter Notebook:**
-    Open the `Housing Model.ipynb` notebook in a Jupyter environment (e.g., Jupyter Notebook, JupyterLab, VS Code) and run the cells in order. The notebook will automatically handle the data loading, model training, and evaluation, and display the results.
+
+matplotlib.pyplot for data visualization 
+
+
+sklearn from the scikit-learn library for machine learning. The specific modules used were:
+
+
+train_test_split to divide the data into training and testing sets 
+
+
+LinearRegression to create the predictive model 
+
+
+mean_squared_error and r2_score to evaluate the model's performance 
+
+Methodology:
+
+
+Data Preparation: I loaded the Housing.csv dataset into a pandas DataFrame. I checked for missing values, but none were found. I then converted categorical features (like 
+
+mainroad, guestroom, furnishingstatus, etc.) into a numerical format using one-hot encoding with pd.get_dummies.
+
+
+Model Training: I split the data into a training set and a testing set with a 80/20 ratio. I then trained a 
+
+LinearRegression model on the training data to predict the price based on the other features.
+
+
+Model Evaluation: After training, I used the model to make predictions on the testing data. I evaluated the model's performance using Mean Squared Error (MSE) and R-squared (R²). The model achieved a Mean Squared Error of 1023704618902.09 and an R-squared score of 0.70.
+
+Result :
+
+LinearRegression model successfully predicts housing prices with a Mean Squared Error (MSE) of 1023704618902.09 and an R-squared (R²) score of 0.70. This R-squared value indicates that the model explains approximately 69.88 % of the variance in the housing prices. This is a good result for a simple model, demonstrating its ability to accurately predict prices based on key house characteristics. The scatter plot of actual versus predicted prices also shows that the predicted values are closely aligned with the actual prices.
+
+Mean Squared Error: 1023704618902.09
+R2 Score (Accuracy): 0.70
+Model Accuracy: 69.88 %
+    
